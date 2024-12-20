@@ -40,12 +40,12 @@ where           transaction_id IS NULL
                 OR
                 total_sale IS NULL;
                 
-	-- DATA EXPLORATION
-    -- How many sales we have?
-    SELECT COUNT(transaction_id) FROM retail_sales;
+-- DATA EXPLORATION
+-- How many sales we have?
+SELECT COUNT(transaction_id) FROM retail_sales;
     
-    -- How many UNIQUE customers we have?
-    SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
+-- How many UNIQUE customers we have?
+SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
 
 -- How many category we have?
 SELECT DISTINCT category FROM retail_sales;
